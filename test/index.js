@@ -34,4 +34,12 @@ describe("Determina el ganador", function () {
             [2,0,0]
         ]), 1)
     })
+
+    it ("Horizontal de X con fila vacía", function () {
+        assert.equal(hayGanador([
+            [0,0,0],
+            [2,2,2],
+            [1,1,0]
+        ]), 2)
+    })
 })

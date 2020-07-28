@@ -10,8 +10,10 @@ function hayGanador(tablero) {
 
     // Comprobar filas (horizontal)
     for (let i = 0; i < tablero.length; i++) {
-        if(tablero[i][0]==tablero[i][1] && tablero[i][0]==tablero[i][2])
-            return tablero[i][0];      
+        let ganador = 0;
+
+        if(tablero[i][0]!=0 && tablero[i][0]==tablero[i][1] && tablero[i][0]==tablero[i][2])
+            return tablero[i][0];        
     }
     return 0; //TODO: provisional, revisar este resultado    
 }
